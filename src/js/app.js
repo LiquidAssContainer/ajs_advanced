@@ -3,9 +3,10 @@ export function orderByProps(object, table) {
     arrayByName = [];
 
   for (let prop in object) { // предполагается отсутствие перечисляемых свойств у прототипа, поэтому отдельной проверки нет
-    let keyValue = { key: prop, value: object[prop] };
-    if (table.includes(prop)) {
-      let index = table.indexOf(prop);
+    let keyValue = { key: prop, value: object[prop] },
+      index = table.indexOf(prop);
+
+    if (index !== -1) {
       arrayByTable[index] = keyValue;
     } else {
       arrayByName.push(keyValue);
