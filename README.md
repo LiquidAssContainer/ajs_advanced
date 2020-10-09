@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/7dio65lhqht1voah?svg=true)](https://ci.appveyor.com/project/LiquidAssContainer/ajs-advanced)
